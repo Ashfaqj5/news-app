@@ -23,5 +23,6 @@ fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=be7e565ab16a45f0b1
             // console.log(docx);
         });
     }
+    
     newsAccordian.innerHTML = newsHtml;
 })
