@@ -3,7 +3,7 @@ fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=be7e565ab16a45f0b1
 .then(response => response.json())
 .then(data =>{
     let newsHtml="";
-    if(data.status=='ok'){
+//     if(data.status=='ok'){
         data.articles.forEach(function(article,index) {
             newsHtml +=`<div class="accordion-item">
             <h2 class="accordion-header" id="heading${index}">
@@ -22,7 +22,7 @@ fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=be7e565ab16a45f0b1
             // var docx = sentiment.analyze(article.title);
             // console.log(docx);
         });
-    }
+//     }
     
     newsAccordian.innerHTML = newsHtml;
 })
